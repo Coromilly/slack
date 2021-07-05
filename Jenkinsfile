@@ -17,7 +17,7 @@ pipeline {
     }
     post {
         aborted {
-            echo "pipeline has been aborted."
+            echo "Pipeline has been aborted."
         }
     }
 }
