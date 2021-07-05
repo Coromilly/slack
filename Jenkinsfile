@@ -10,7 +10,7 @@ pipeline {
             }
             post {
                 aborted{
-                    echo "test stage has been aborted"
+                    echo "test stage has been aborted."
                 }
             }            
         }
