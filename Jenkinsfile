@@ -35,9 +35,7 @@ pipeline {
     post {
         aborted {
             echo "Pipeline has been aborted."
-        }
-    }
-    post { 
+    
         cleanup { 
             cleanWs()
         }
