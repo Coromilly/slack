@@ -47,11 +47,11 @@ pipeline {
                             ],
                             [
                                 "type": "button",
-                                "text": {
+                                "text": [
                                     "type": "plain_text",
                                     "emoji": true,
                                     "text": "Reject"
-                                },
+                                ],
                                 "style": "danger",
                                 "value": "click_me_123"
                             ]
@@ -66,7 +66,7 @@ pipeline {
                 }
                 echo "helloworld"
             }
-            
+
             post {
                 aborted{
                     echo "Test stage has been aborted."
