@@ -21,7 +21,7 @@ pipeline {
         stage('test') {
             steps {
                 script {
-                    input id: 'go', message: 'Proceed?', ok: 'Yes', submitter: 'admin'
+                    input id: 'go', message: 'Proceed?', ok: 'Yees', submitter: 'admin'
                 }
                 echo "helloworld"
             }
