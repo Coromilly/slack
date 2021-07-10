@@ -11,8 +11,8 @@ pipeline {
      token: '12345',
      tokenCredentialId: '',
 
-     printContributedVariables: false,
-     printPostContent: false,
+//      printContributedVariables: false,
+//      printPostContent: false,
 
      silentResponse: false,
    )
