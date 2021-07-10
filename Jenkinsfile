@@ -1,22 +1,22 @@
 pipeline {
     agent any
-    triggers {
-    GenericTrigger(
-     genericVariables: [
-      [key: 'ref', value: '$.ref']
-     ],
+//     triggers {
+//     GenericTrigger(
+//      genericVariables: [
+//       [key: 'ref', value: '$.ref']
+//      ],
 
-     causeString: 'Triggered on $ref',
+//      causeString: 'Triggered on $ref',
 
-     token: '12345',
-     tokenCredentialId: '',
+//      token: '12345',
+//      tokenCredentialId: '',
 
-     printContributedVariables: true,
-     printPostContent: true,
+//      printContributedVariables: true,
+//      printPostContent: true,
 
-     silentResponse: false,
-   )
-  }
+//      silentResponse: false,
+//    )
+//   }
     stages {
         stage('test') {
             steps {
