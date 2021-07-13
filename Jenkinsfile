@@ -43,7 +43,7 @@ pipeline {
                                         "text": "Approve"
                                     ],
                                     "style": "primary",
-                                    "value": "confirm"
+                                    "value": "click_me"
                                 ],
                                 [
                                     "type": "button",
@@ -62,9 +62,9 @@ pipeline {
                 
                 slackSend(channel: "#devops", blocks: blocks)
 
-//                 script {
-//                     input id: 'confirm', message: 'Proceed?', ok: 'Yes', submitter: 'admin'
-//                 }
+                script {
+                    input id: 'confirm', message: 'Proceed?', ok: 'Yes', submitter: 'admin'
+                }
                 echo "helloworld"
             }
 
