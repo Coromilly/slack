@@ -53,7 +53,7 @@ pipeline {
                                         "text": "Reject"
                                     ],
                                     "style": "danger",
-                                    "value": "click_me_123"
+                                    "value": "click_me"
                                 ]
                             ]				
                         ]
