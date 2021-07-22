@@ -73,7 +73,7 @@ pipeline {
                 slackSend(channel: "#devops", blocks: blocks)
 
                 script {
-                    input id: 'confirm', message: 'Proceeed?', ok: 'Yes', submitter: 'admin'
+                    input id: 'confirm', message: 'Proceeed?', ok: 'Yess', submitter: 'admin'
                 }
                 echo "helloworld"
             }
