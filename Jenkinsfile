@@ -1,4 +1,4 @@
-pipeline {
+sipipeline {
     agent any
     triggers {
         GenericTrigger(
