@@ -3,9 +3,9 @@ pipeline {
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'name', value: '$.pusher.name'],
-//                 [key: 'branch', value: '$.repository.master_branch'],
-                [key: 'url', value: '$.commits.[0].url']
+                [key: 'name', value: '$.pusher.name'],                
+                [key: 'url', value: '$.commits.[0].url'],
+		[key: 'branch', value: '$.repository.master_branch'],
             ],
 
             causeString: 'Triggered by $name',
