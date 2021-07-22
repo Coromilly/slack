@@ -4,7 +4,7 @@ pipeline {
         GenericTrigger(
             genericVariables: [
                 [key: 'name', value: '$.pusher.name'],
-                [key: 'branch', value: '$.repository.master_branch'],
+//                 [key: 'branch', value: '$.repository.master_branch'],
                 [key: 'url', value: '$.commits.[0].url']
             ],
 
