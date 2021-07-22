@@ -26,7 +26,7 @@ pipeline {
                             "type": "section",
                             "text": [
                                 "type": "mrkdwn",
-                                "text": "Hello, please accept my job."
+                                "text": "${name} made commit, please accept job."
                             ]
                         ],
                         [
