@@ -1,9 +1,9 @@
-sipipeline {
+pipeline {
     agent any
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'branch', value: '$.ref']
+                [key: 'repository.node_id', value: '$.ref']
             ],
 
             causeString: 'Triggered on $ref',
@@ -61,7 +61,7 @@ sipipeline {
                     ]
                 }
                 
-                slackSend(channel: "#devops", message: "Starting to build ${branch} for ${name}", blocks: blocks)
+                slackSend(channel: "#devops", blocks: blocks)
 
                 script {
                     input id: 'confirm', message: 'Proceed?', ok: 'Yes', submitter: 'admin'
