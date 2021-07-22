@@ -40,10 +40,10 @@ pipeline {
                                     "text": [
                                         "type": "plain_text",
                                         "emoji": true,
-                                        "text": "Approve"
+                                        "text": "Approove"
                                     ],
                                     "style": "primary",
-                                    "url": "curl http://coromilly:11ab9572042c68809cbf56589831c9e322@18.207.112.223:8080/job/rjhj/39/input/Confirm/proceedEmpty"
+                                    "url": "curl http://coromilly:11ab9572042c68809cbf56589831c9e322@18.207.112.223:8080/job/rjhj/41/input/Confirm/proceedEmpty"
                                 ],
                                 [
                                     "type": "button",
