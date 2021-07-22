@@ -6,7 +6,7 @@ pipeline {
                 [key: 'name', value: '$.commits.author.name']
             ],
 
-            causeString: 'Triggered on $repository.node_id',
+            causeString: 'Triggered on $commits.author.name',
 
             token: '12345',
             tokenCredentialId: '',
