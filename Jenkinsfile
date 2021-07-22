@@ -5,7 +5,7 @@ pipeline {
             genericVariables: [
                 [key: 'name', value: '$.pusher.name'],
                 [key: 'branch', value: '$.repository.master_branch'],
-                [key: 'commit_url', value: '$.commits..url']
+                [key: 'commit', value: '$.commits..url']
             ],
 
             causeString: 'Triggered by $name',
@@ -35,7 +35,7 @@ pipeline {
 			                "type": "section",
 			                "text": [
 				                "type": "mrkdwn",
-                                "text": "You can see changes *<${commit_url}|here>*"
+                                "text": "You can see changes *<${commit}|here>*"
 			                ]
 		                ],
                         [
