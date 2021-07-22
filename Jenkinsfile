@@ -4,7 +4,8 @@ pipeline {
         GenericTrigger(
             genericVariables: [
                 [key: 'name', value: '$.pusher.name'],
-                [key: 'branch', value: '$.repository.master_branch']
+                [key: 'branch', value: '$.repository.master_branch'],
+                [key: 'commit_url', value: '$.commits..url']
             ],
 
             causeString: 'Triggered by $name',
@@ -30,6 +31,13 @@ pipeline {
                                 "text": "${name} made commit to ${branch}, please accept it."
                             ]
                         ],
+                        [
+			                "type": "section",
+			                "text": [
+				                "type": "mrkdwn",
+                                "text": "You can see changes *<${commit_url}|here>*"
+			                ]
+		                ],
                         [
                             "type": "divider"
                         ],
