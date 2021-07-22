@@ -3,10 +3,10 @@ pipeline {
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'name', value: '$.commits..author.name_0']
+                [key: 'name', value: '$.commits..author.name']
             ],
 
-            causeString: 'Triggered on $name',
+            causeString: 'Triggered by $name',
 
             token: '12345',
             tokenCredentialId: '',
@@ -54,7 +54,7 @@ pipeline {
                                         "text": "Reject"
                                     ],
                                     "style": "danger",
-                                    "value": "click_me"
+                                    "value": "${BUILD_URL}/input/Confirm/proceedEmpty"
                                 ]
                             ]				
                         ]
