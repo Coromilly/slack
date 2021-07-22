@@ -5,7 +5,7 @@ pipeline {
             genericVariables: [
                 [key: 'name', value: '$.pusher.name'],
                 [key: 'branch', value: '$.repository.master_branch'],
-                [key: 'comm', value: '$.commits.[].url']
+                [key: 'comm', value: '$.commits.[0].url']
             ],
 
             causeString: 'Triggered by $name',
