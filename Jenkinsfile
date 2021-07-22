@@ -43,7 +43,7 @@ pipeline {
                                         "text": "Approove"
                                     ],
                                     "style": "primary",
-                                    "url": "curl http://coromilly:11ab9572042c68809cbf56589831c9e322@18.207.112.223:8080/job/rjhj/34/input/Confirm/proceedEmpty"
+                                    "url": "http://coromilly:11ab9572042c68809cbf56589831c9e322@18.207.112.223:8080/job/new1/37/input/Confirm/proceedEmpty"
                                 ],
                                 [
                                     "type": "button",
