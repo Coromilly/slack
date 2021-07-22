@@ -12,7 +12,7 @@ pipeline {
             tokenCredentialId: '',
 
             printContributedVariables: false,
-            printPostContent: false,
+            printPostContent: true,
 
             silentResponse: false,
         )
