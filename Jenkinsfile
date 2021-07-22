@@ -43,7 +43,7 @@ pipeline {
                                         "text": "Approve"
                                     ],
                                     "style": "primary",
-                                    "url": "www.google.com"
+                                    "url": "https://google.com"
                                 ],
                                 [
                                     "type": "button",
