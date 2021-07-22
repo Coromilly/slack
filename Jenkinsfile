@@ -54,7 +54,7 @@ pipeline {
                                         "text": "Reject"
                                     ],
                                     "style": "danger",
-                                    "value": "${BUILD_URL}/input/Confirm/abort"
+                                    "url": "${BUILD_URL}/input/Confirm/abort"
                                 ]
                             ]				
                         ]
