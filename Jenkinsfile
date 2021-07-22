@@ -3,7 +3,7 @@ pipeline {
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'name', value: '$.commits..author.name.[]']
+                [key: 'name', value: '$.commits..author.name']
             ],
 
             causeString: 'Triggered by $name',
@@ -26,7 +26,7 @@ pipeline {
                             "type": "section",
                             "text": [
                                 "type": "mrkdwn",
-                                "text": "${name} made commit, please accept hit."
+                                "text": "${name} made commit, please accept it."
                             ]
                         ],
                         [
