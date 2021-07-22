@@ -3,10 +3,10 @@ pipeline {
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'email', value: '$.commits.author.email']
+                [key: 'commits.author.email', value: '$.ref']
             ],
 
-            causeString: 'Triggered on $email',
+            causeString: 'Triggered on $commits.author.email',
 
             token: '12345',
             tokenCredentialId: '',
@@ -44,7 +44,7 @@ pipeline {
                                     ],
                                     "style": "primary",
 //                                     "url": "http://coromilly:11ab9572042c68809cbf56589831c9e322@18.207.112.223:8080/job/new1/37/input/Confirm/proceedEmpty"
-                                    "url": "http://18.207.112.223:8080/job/new1/39/input/Confirm/proceedEmpty"
+                                    "url": "${BUILD_URL}/input/Confirm/proceedEmpty"
                                 ],
                                 [
                                     "type": "button",
