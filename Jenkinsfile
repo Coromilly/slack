@@ -3,7 +3,7 @@ pipeline {
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'branch', value: '$.ref']
+                [key: 'branch', value: '$.repository']
             ],
 
             causeString: 'Triggered on $ref',
@@ -61,7 +61,7 @@ pipeline {
                     ]
                 }
                 
-                slackSend(channel: "#devops", blocks: blocks)
+                slackSend(channel: "#devops", message: "Starting to build ${branch} for ${name}", blocks: blocks)
 
                 script {
                     input id: 'confirm', message: 'Proceed?', ok: 'Yes', submitter: 'admin'
