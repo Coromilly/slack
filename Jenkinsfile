@@ -13,7 +13,7 @@ pipeline {
             tokenCredentialId: '',
 
             printContributedVariables: false,
-            printPostContent: true,
+            printPostContent: false,
 
             silentResponse: false,
         )
