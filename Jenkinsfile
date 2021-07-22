@@ -6,7 +6,7 @@ pipeline {
                 [key: 'repository.node_id', value: '$.repository.node_id']
             ],
 
-            causeString: 'Triggered on $ref',
+            causeString: 'Triggered on $repository.node_id',
 
             token: '12345',
             tokenCredentialId: '',
