@@ -3,10 +3,10 @@ pipeline {
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'commits.author.email', value: '$.ref']
+                [key: 'email', value: '$.commits.author..email']
             ],
 
-            causeString: 'Triggered on $commits.author.email',
+            causeString: 'Triggered on $email',
 
             token: '12345',
             tokenCredentialId: '',
