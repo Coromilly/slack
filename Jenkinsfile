@@ -32,12 +32,12 @@ pipeline {
                             ]
                         ],
                         [
-			                "type": "section",
-			                "text": [
-				                "type": "mrkdwn",
-                                "text": "You can see changes *<${url}|here>*"
-			                ]
-		                ],
+			    "type": "section",
+			    "text": [
+				"type": "mrkdwn",
+                               	"text": "You can see changes *<${url}|here>*"
+			    ]
+		        ],
                         [
                             "type": "divider"
                         ],
