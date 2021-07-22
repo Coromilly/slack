@@ -3,7 +3,7 @@ pipeline {
     triggers {
         GenericTrigger(
             genericVariables: [
-                [key: 'repository.node_id', value: '$.repository.node_id']
+                [key: 'name', value: '$.commits.author.name']
             ],
 
             causeString: 'Triggered on $repository.node_id',
