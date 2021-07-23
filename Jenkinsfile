@@ -35,7 +35,7 @@ pipeline {
 			    "type": "section",
 			    "text": [
 				"type": "mrkdwn",
-                               	"text": "You caan see all changes *<${url}|here>*"
+                               	"text": "You can see all changes *<${url}|here>*"
 			    ]
 		        ],
                         [
